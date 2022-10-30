@@ -7,10 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		080AE1DE28FE8DC80010F66E /* KConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080AE1DD28FE8DC80010F66E /* KConstants.swift */; };
+		080AE1E128FEBCE80010F66E /* product.json in Resources */ = {isa = PBXBuildFile; fileRef = 080AE1E028FEBCE80010F66E /* product.json */; };
+		080AE20328FF26520010F66E /* productapi.json in Resources */ = {isa = PBXBuildFile; fileRef = 080AE20228FF26520010F66E /* productapi.json */; };
+		080AE20828FF507A0010F66E /* AppSecrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080AE20728FF507A0010F66E /* AppSecrets.swift */; };
+		080AE20A28FF5EF80010F66E /* AuthUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080AE20928FF5EF80010F66E /* AuthUser.swift */; };
+		080AE20C28FF5F640010F66E /* AuthUserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080AE20B28FF5F640010F66E /* AuthUserResponse.swift */; };
+		08644D0E2908511100FFB20A /* RefrigeratorsProductRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08644D0D2908511100FFB20A /* RefrigeratorsProductRequest.swift */; };
+		08644D102908531B00FFB20A /* RefrigeratorProductResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08644D0F2908531B00FFB20A /* RefrigeratorProductResponse.swift */; };
 		08816B6A28FDCFDE009DCB3C /* AmbarAPI.docc in Sources */ = {isa = PBXBuildFile; fileRef = 08816B6928FDCFDE009DCB3C /* AmbarAPI.docc */; };
 		08816B7028FDCFDE009DCB3C /* AmbarAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08816B6528FDCFDE009DCB3C /* AmbarAPI.framework */; };
 		08816B7528FDCFDE009DCB3C /* AmbarAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08816B7428FDCFDE009DCB3C /* AmbarAPITests.swift */; };
 		08816B7628FDCFDE009DCB3C /* AmbarAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 08816B6828FDCFDE009DCB3C /* AmbarAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08816B8028FDD0EA009DCB3C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08816B7F28FDD0EA009DCB3C /* GoogleService-Info.plist */; };
+		08816B8328FDD18E009DCB3C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 08816B8228FDD18E009DCB3C /* FirebaseAnalytics */; };
+		08816B8528FDD18E009DCB3C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 08816B8428FDD18E009DCB3C /* FirebaseAuth */; };
+		08816B8728FDD18E009DCB3C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 08816B8628FDD18E009DCB3C /* FirebaseFirestore */; };
+		08816B8928FDD18E009DCB3C /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 08816B8828FDD18E009DCB3C /* FirebaseFirestoreSwift */; };
+		08816B8B28FDD2F0009DCB3C /* AmbarAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08816B8A28FDD2F0009DCB3C /* AmbarAPIService.swift */; };
+		08816B8E28FDD395009DCB3C /* ProductResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08816B8D28FDD395009DCB3C /* ProductResponse.swift */; };
+		08816B9128FDD42A009DCB3C /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08816B9028FDD42A009DCB3C /* Product.swift */; };
+		0891C7D02905B9410086E786 /* CellarProductResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0891C7CF2905B9410086E786 /* CellarProductResponse.swift */; };
+		089A9EE229072F64004DE9A0 /* CellarsProductRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089A9EE129072F64004DE9A0 /* CellarsProductRequest.swift */; };
+		08A71F372904225E00AF9376 /* FireBaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A71F362904225E00AF9376 /* FireBaseError.swift */; };
+		08A84B20290524BB0077859E /* QueryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A84B1F290524BB0077859E /* QueryModel.swift */; };
+		08F414F6290329EB0039C2E7 /* CellarProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F414F5290329EB0039C2E7 /* CellarProduct.swift */; };
+		08F414F829032A460039C2E7 /* RefrigeratorProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F414F729032A460039C2E7 /* RefrigeratorProduct.swift */; };
+		08F414FA29032B310039C2E7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F414F929032B310039C2E7 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +47,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		080AE1DD28FE8DC80010F66E /* KConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KConstants.swift; sourceTree = "<group>"; };
+		080AE1E028FEBCE80010F66E /* product.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = product.json; sourceTree = "<group>"; };
+		080AE20228FF26520010F66E /* productapi.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = productapi.json; sourceTree = "<group>"; };
+		080AE20728FF507A0010F66E /* AppSecrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSecrets.swift; sourceTree = "<group>"; };
+		080AE20928FF5EF80010F66E /* AuthUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUser.swift; sourceTree = "<group>"; };
+		080AE20B28FF5F640010F66E /* AuthUserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUserResponse.swift; sourceTree = "<group>"; };
+		08644D0D2908511100FFB20A /* RefrigeratorsProductRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefrigeratorsProductRequest.swift; sourceTree = "<group>"; };
+		08644D0F2908531B00FFB20A /* RefrigeratorProductResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefrigeratorProductResponse.swift; sourceTree = "<group>"; };
 		08816B6528FDCFDE009DCB3C /* AmbarAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AmbarAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08816B6828FDCFDE009DCB3C /* AmbarAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmbarAPI.h; sourceTree = "<group>"; };
 		08816B6928FDCFDE009DCB3C /* AmbarAPI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = AmbarAPI.docc; sourceTree = "<group>"; };
 		08816B6F28FDCFDE009DCB3C /* AmbarAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmbarAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08816B7428FDCFDE009DCB3C /* AmbarAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbarAPITests.swift; sourceTree = "<group>"; };
+		08816B7F28FDD0EA009DCB3C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		08816B8A28FDD2F0009DCB3C /* AmbarAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbarAPIService.swift; sourceTree = "<group>"; };
+		08816B8D28FDD395009DCB3C /* ProductResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResponse.swift; sourceTree = "<group>"; };
+		08816B9028FDD42A009DCB3C /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		0891C7CF2905B9410086E786 /* CellarProductResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellarProductResponse.swift; sourceTree = "<group>"; };
+		089A9EE129072F64004DE9A0 /* CellarsProductRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellarsProductRequest.swift; sourceTree = "<group>"; };
+		08A71F362904225E00AF9376 /* FireBaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseError.swift; sourceTree = "<group>"; };
+		08A84B1F290524BB0077859E /* QueryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryModel.swift; sourceTree = "<group>"; };
+		08F414F5290329EB0039C2E7 /* CellarProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellarProduct.swift; sourceTree = "<group>"; };
+		08F414F729032A460039C2E7 /* RefrigeratorProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefrigeratorProduct.swift; sourceTree = "<group>"; };
+		08F414F929032B310039C2E7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +78,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08816B8328FDD18E009DCB3C /* FirebaseAnalytics in Frameworks */,
+				08816B8528FDD18E009DCB3C /* FirebaseAuth in Frameworks */,
+				08816B8728FDD18E009DCB3C /* FirebaseFirestore in Frameworks */,
+				08816B8928FDD18E009DCB3C /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,9 +96,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		080AE1DC28FE8DB10010F66E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				080AE1DD28FE8DC80010F66E /* KConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		080AE1DF28FEBCC70010F66E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				080AE1E028FEBCE80010F66E /* product.json */,
+				080AE20228FF26520010F66E /* productapi.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		080AE20428FF4B950010F66E /* Secrets */ = {
+			isa = PBXGroup;
+			children = (
+				080AE20728FF507A0010F66E /* AppSecrets.swift */,
+			);
+			path = Secrets;
+			sourceTree = "<group>";
+		};
 		08816B5B28FDCFDE009DCB3C = {
 			isa = PBXGroup;
 			children = (
+				08816B8A28FDD2F0009DCB3C /* AmbarAPIService.swift */,
+				089A9EE029072F3B004DE9A0 /* RequestModels */,
+				08A84B1E290524A30077859E /* QueryModel */,
+				080AE20428FF4B950010F66E /* Secrets */,
+				080AE1DC28FE8DB10010F66E /* Constants */,
+				08816B8C28FDD378009DCB3C /* Responses */,
+				08816B8F28FDD415009DCB3C /* DTOs */,
 				08816B6728FDCFDE009DCB3C /* AmbarAPI */,
 				08816B7328FDCFDE009DCB3C /* AmbarAPITests */,
 				08816B6628FDCFDE009DCB3C /* Products */,
@@ -71,6 +149,7 @@
 		08816B6728FDCFDE009DCB3C /* AmbarAPI */ = {
 			isa = PBXGroup;
 			children = (
+				08816B7F28FDD0EA009DCB3C /* GoogleService-Info.plist */,
 				08816B6828FDCFDE009DCB3C /* AmbarAPI.h */,
 				08816B6928FDCFDE009DCB3C /* AmbarAPI.docc */,
 			);
@@ -80,9 +159,51 @@
 		08816B7328FDCFDE009DCB3C /* AmbarAPITests */ = {
 			isa = PBXGroup;
 			children = (
+				080AE1DF28FEBCC70010F66E /* Resources */,
 				08816B7428FDCFDE009DCB3C /* AmbarAPITests.swift */,
 			);
 			path = AmbarAPITests;
+			sourceTree = "<group>";
+		};
+		08816B8C28FDD378009DCB3C /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				08816B8D28FDD395009DCB3C /* ProductResponse.swift */,
+				080AE20B28FF5F640010F66E /* AuthUserResponse.swift */,
+				0891C7CF2905B9410086E786 /* CellarProductResponse.swift */,
+				08644D0F2908531B00FFB20A /* RefrigeratorProductResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		08816B8F28FDD415009DCB3C /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				08816B9028FDD42A009DCB3C /* Product.swift */,
+				080AE20928FF5EF80010F66E /* AuthUser.swift */,
+				08F414F5290329EB0039C2E7 /* CellarProduct.swift */,
+				08F414F729032A460039C2E7 /* RefrigeratorProduct.swift */,
+				08F414F929032B310039C2E7 /* User.swift */,
+				08A71F362904225E00AF9376 /* FireBaseError.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		089A9EE029072F3B004DE9A0 /* RequestModels */ = {
+			isa = PBXGroup;
+			children = (
+				089A9EE129072F64004DE9A0 /* CellarsProductRequest.swift */,
+				08644D0D2908511100FFB20A /* RefrigeratorsProductRequest.swift */,
+			);
+			path = RequestModels;
+			sourceTree = "<group>";
+		};
+		08A84B1E290524A30077859E /* QueryModel */ = {
+			isa = PBXGroup;
+			children = (
+				08A84B1F290524BB0077859E /* QueryModel.swift */,
+			);
+			path = QueryModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,6 +234,12 @@
 			dependencies = (
 			);
 			name = AmbarAPI;
+			packageProductDependencies = (
+				08816B8228FDD18E009DCB3C /* FirebaseAnalytics */,
+				08816B8428FDD18E009DCB3C /* FirebaseAuth */,
+				08816B8628FDD18E009DCB3C /* FirebaseFirestore */,
+				08816B8828FDD18E009DCB3C /* FirebaseFirestoreSwift */,
+			);
 			productName = AmbarAPI;
 			productReference = 08816B6528FDCFDE009DCB3C /* AmbarAPI.framework */;
 			productType = "com.apple.product-type.framework";
@@ -162,6 +289,9 @@
 				Base,
 			);
 			mainGroup = 08816B5B28FDCFDE009DCB3C;
+			packageReferences = (
+				08816B8128FDD18E009DCB3C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 08816B6628FDCFDE009DCB3C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -177,6 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08816B8028FDD0EA009DCB3C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +315,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				080AE20328FF26520010F66E /* productapi.json in Resources */,
+				080AE1E128FEBCE80010F66E /* product.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +327,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08F414F6290329EB0039C2E7 /* CellarProduct.swift in Sources */,
+				08A71F372904225E00AF9376 /* FireBaseError.swift in Sources */,
+				080AE1DE28FE8DC80010F66E /* KConstants.swift in Sources */,
+				089A9EE229072F64004DE9A0 /* CellarsProductRequest.swift in Sources */,
+				080AE20C28FF5F640010F66E /* AuthUserResponse.swift in Sources */,
+				08A84B20290524BB0077859E /* QueryModel.swift in Sources */,
+				08816B8E28FDD395009DCB3C /* ProductResponse.swift in Sources */,
+				08644D102908531B00FFB20A /* RefrigeratorProductResponse.swift in Sources */,
+				08816B9128FDD42A009DCB3C /* Product.swift in Sources */,
+				0891C7D02905B9410086E786 /* CellarProductResponse.swift in Sources */,
+				080AE20A28FF5EF80010F66E /* AuthUser.swift in Sources */,
+				08816B8B28FDD2F0009DCB3C /* AmbarAPIService.swift in Sources */,
 				08816B6A28FDCFDE009DCB3C /* AmbarAPI.docc in Sources */,
+				080AE20828FF507A0010F66E /* AppSecrets.swift in Sources */,
+				08F414F829032A460039C2E7 /* RefrigeratorProduct.swift in Sources */,
+				08F414FA29032B310039C2E7 /* User.swift in Sources */,
+				08644D0E2908511100FFB20A /* RefrigeratorsProductRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +545,7 @@
 		08816B7D28FDCFDE009DCB3C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HRD7AXL786;
@@ -412,6 +562,7 @@
 		08816B7E28FDCFDE009DCB3C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HRD7AXL786;
@@ -456,6 +607,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		08816B8128FDD18E009DCB3C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		08816B8228FDD18E009DCB3C /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08816B8128FDD18E009DCB3C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		08816B8428FDD18E009DCB3C /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08816B8128FDD18E009DCB3C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		08816B8628FDD18E009DCB3C /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08816B8128FDD18E009DCB3C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		08816B8828FDD18E009DCB3C /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08816B8128FDD18E009DCB3C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 08816B5C28FDCFDE009DCB3C /* Project object */;
 }

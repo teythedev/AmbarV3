@@ -9,28 +9,60 @@ import XCTest
 @testable import AmbarAPI
 
 final class AmbarAPITests: XCTestCase {
-
+    
+    private var service: MockAPI!
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        service = MockAPI()
     }
-
+    
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
+    
     func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+        let bundle = Bundle(for: AmbarAPITests.self)
+        let url = bundle.url(forResource: "product", withExtension: "json")!
+        let data = try Data(contentsOf: url)
+        let decoder = JSONDecoder()
+        let product = try decoder.decode(Product.self, from: data)
+        
+        XCTAssertEqual(product.fields.productName, "Onion")
+        XCTAssertEqual(product.id, "FD1k7Lt6os58Vp4zqFRL")
+        
+        service.fetch(path: KConstants.kPosts.rawValue) { (result: Result<ProductsResponse, Error>) in
+            switch result {
+            case .success(let data):
+                print(data.documents.count)
+                XCTAssertEqual(data.documents.count, 5)
+            case .failure(let error):
+                print(error)
+            }
+        }
+        
     }
+}
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+final class MockAPI: AmbarApiServiceProtocol {
+    func signUp(email: String, password: String, completion: @escaping (Result<Bool, Error>) -> Void) {
+        //TODO
+    }
+    
+    func fetch<T: Decodable>(path: String, completion: @escaping (Result<T, Error>) -> Void)  {
+        let bundle = Bundle(for: AmbarAPITests.self)
+        let url = bundle.url(forResource: "productapi", withExtension: "json")!
+        let data = try? Data(contentsOf: url)
+        let decoder = JSONDecoder()
+        do {
+            let response = try decoder.decode(T.self, from: data!)
+            completion(.success(response))
+        }catch {
+            completion(.failure(error))
         }
     }
+    
+    
+    
 
 }
