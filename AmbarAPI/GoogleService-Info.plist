@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1076170289086-kvc87g25k5b61l9iprs0tostlulkabh7.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1076170289086-kvc87g25k5b61l9iprs0tostlulkabh7</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCCIs_EmrZpn6b2Ijnoymkdo2T1mfnblyU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1076170289086</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.yucedagemre.AmbarAPI</string>
+	<key>PROJECT_ID</key>
+	<string>ambar-c18b5</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ambar-c18b5.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1076170289086:ios:862b631c1b5b38448113ef</string>
+</dict>
+</plist>

@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct CellarProduct: Codable{
+public struct CellarProduct: Codable, Equatable{
     
     public enum cellarProductFieldConstants: String, CaseIterable {
         case kProductAmountType = "productAmountType"
@@ -23,9 +23,9 @@ public struct CellarProduct: Codable{
     public let productAmountType: String
     public var productAmount: String
     public var productRefrigeratorID: String?
-    public let fbID: String
+    public let fbID: String?
     
-    public init(userID: String, productName: String, productAmountType: String, productAmount: String, productRefrigeratorID: String?, fbID: String) {
+    public init(userID: String, productName: String, productAmountType: String, productAmount: String, productRefrigeratorID: String?, fbID: String?) {
         self.userID = userID
         self.productName = productName
         self.productAmountType = productAmountType

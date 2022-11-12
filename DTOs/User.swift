@@ -7,9 +7,26 @@
 
 import Foundation
 
-struct User: Codable {
-    let id: String
-    let email: String
-    let idToken: String
-    let refreshToken: String
+public struct User: Codable, Equatable {
+    public enum CodingKeys: String, CodingKey {
+        case id = "localId"
+        case email
+        case idToken
+        case refreshToken
+    }
+    public let id: String
+    public let email: String
+    public let idToken: String
+    public let refreshToken: String
+}
+
+public struct RefreshedToken: Codable {
+    public enum CodingKeys: String, CodingKey {
+        case refreshToken = "refresh_token"
+        case idToken = "id_token"
+        case userID = "user_id"
+    }
+    
+    public let refreshToken: String
+    public let idToken, userID: String
 }

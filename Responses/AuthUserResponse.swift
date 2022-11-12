@@ -13,10 +13,10 @@ public struct AuthUserResponse: Decodable {
     }
     
     
-    public let authUser: AuthUser
+    public let authUser: User
     
     public init(from decoder: Decoder) throws {
         let container = try decoder.singleValueContainer()
-        self.authUser = try container.decode(AuthUser.self)
+        self.authUser = try container.decode(User.self)
     }
 }

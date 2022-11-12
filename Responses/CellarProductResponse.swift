@@ -8,7 +8,7 @@
 import Foundation
 
 public struct CellarProductResponse: Decodable {
-    public  let document: CellarProductDocument
+    public  let document: CellarProductDocument?
     public let readTime: String
     
     enum CodingKeys: CodingKey {
@@ -16,22 +16,22 @@ public struct CellarProductResponse: Decodable {
         case readTime
     }
     
-    public var cellarProduct: CellarProduct
+    public var cellarProduct: CellarProduct?
     
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.document = try container.decode(CellarProductDocument.self, forKey: .document)
+        self.document = try container.decodeIfPresent(CellarProductDocument.self, forKey: .document)
         self.readTime = try container.decode(String.self, forKey: .readTime)
         
-        cellarProduct = CellarProduct(
-            userID: document.fields.userID.stringValue,
-            productName: document.fields.productName.stringValue,
-            productAmountType: document.fields.productAmountType.stringValue,
-            productAmount: document.fields.productAmount.stringValue,
-            productRefrigeratorID: document.fields.productRefrigeratorID?.stringValue,
-            fbID: document.fbID)
-        
-        
+        if let document = document {
+            cellarProduct = CellarProduct(
+                userID: document.fields.userID.stringValue,
+                productName: document.fields.productName.stringValue,
+                productAmountType: document.fields.productAmountType.stringValue,
+                productAmount: document.fields.productAmount.stringValue,
+                productRefrigeratorID: document.fields.productRefrigeratorID?.stringValue,
+                fbID: document.fbID)
+        }
     }
 }
 
@@ -85,13 +85,4 @@ public struct CellarProductResponseFields: Decodable {
         self.productRefrigeratorID = try container.decodeIfPresent(StringValue.self, forKey: .productRefrigeratorID)
     }
     
-}
-
-// MARK: -
-public struct StringValue: Decodable {
-    public  let stringValue: String
-    
-    public init(stringValue: String) {
-        self.stringValue = stringValue
-    }
 }

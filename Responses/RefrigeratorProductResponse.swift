@@ -8,7 +8,7 @@
 import Foundation
 
 public struct RefrigeratorProductResponse: Decodable {
-    public  let document: RefrigeratorProductDocument
+    public  let document: RefrigeratorProductDocument?
     public let readTime: String
     
     enum CodingKeys: CodingKey {
@@ -16,22 +16,22 @@ public struct RefrigeratorProductResponse: Decodable {
         case readTime
     }
     
-    public var refrigeratorProduct: RefrigeratorProduct
+    public var refrigeratorProduct: RefrigeratorProduct?
     
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.document = try container.decode(RefrigeratorProductDocument.self, forKey: .document)
+        self.document = try container.decodeIfPresent(RefrigeratorProductDocument.self, forKey: .document)
         self.readTime = try container.decode(String.self, forKey: .readTime)
         
-        refrigeratorProduct = RefrigeratorProduct(
-            userID: document.fields.userID.stringValue,
-            productName: document.fields.productName.stringValue,
-            productAmountType: document.fields.productAmountType.stringValue,
-            productAmount: document.fields.productAmount.stringValue,
-            productCellarID: document.fields.productCelllarID?.stringValue,
-            fbID: document.fbID)
-        
-        
+        if let document = document {
+            refrigeratorProduct = RefrigeratorProduct(
+                userID: document.fields.userID.stringValue,
+                productName: document.fields.productName.stringValue,
+                productAmountType: document.fields.productAmountType.stringValue,
+                productAmount: document.fields.productAmount.stringValue,
+                productCellarID: document.fields.productCelllarID?.stringValue,
+                fbID: document.fbID)
+        }
     }
 }
 
@@ -87,11 +87,3 @@ public struct RefrigeratorProductResponseFields: Decodable {
     
 }
 
-// MARK: -
-//public struct StringValue: Decodable {
-//    public  let stringValue: String
-//
-//    public init(stringValue: String) {
-//        self.stringValue = stringValue
-//    }
-//}

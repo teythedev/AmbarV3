@@ -11,10 +11,11 @@
 		080AE1E128FEBCE80010F66E /* product.json in Resources */ = {isa = PBXBuildFile; fileRef = 080AE1E028FEBCE80010F66E /* product.json */; };
 		080AE20328FF26520010F66E /* productapi.json in Resources */ = {isa = PBXBuildFile; fileRef = 080AE20228FF26520010F66E /* productapi.json */; };
 		080AE20828FF507A0010F66E /* AppSecrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080AE20728FF507A0010F66E /* AppSecrets.swift */; };
-		080AE20A28FF5EF80010F66E /* AuthUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080AE20928FF5EF80010F66E /* AuthUser.swift */; };
 		080AE20C28FF5F640010F66E /* AuthUserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080AE20B28FF5F640010F66E /* AuthUserResponse.swift */; };
+		082007A6291D813A0044F72E /* RefreshDateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082007A5291D813A0044F72E /* RefreshDateHelper.swift */; };
 		08644D0E2908511100FFB20A /* RefrigeratorsProductRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08644D0D2908511100FFB20A /* RefrigeratorsProductRequest.swift */; };
 		08644D102908531B00FFB20A /* RefrigeratorProductResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08644D0F2908531B00FFB20A /* RefrigeratorProductResponse.swift */; };
+		0878A42A291C309C00F555BA /* KeyChainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0878A429291C309C00F555BA /* KeyChainManager.swift */; };
 		08816B6A28FDCFDE009DCB3C /* AmbarAPI.docc in Sources */ = {isa = PBXBuildFile; fileRef = 08816B6928FDCFDE009DCB3C /* AmbarAPI.docc */; };
 		08816B7028FDCFDE009DCB3C /* AmbarAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08816B6528FDCFDE009DCB3C /* AmbarAPI.framework */; };
 		08816B7528FDCFDE009DCB3C /* AmbarAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08816B7428FDCFDE009DCB3C /* AmbarAPITests.swift */; };
@@ -29,8 +30,10 @@
 		08816B9128FDD42A009DCB3C /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08816B9028FDD42A009DCB3C /* Product.swift */; };
 		0891C7D02905B9410086E786 /* CellarProductResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0891C7CF2905B9410086E786 /* CellarProductResponse.swift */; };
 		089A9EE229072F64004DE9A0 /* CellarsProductRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089A9EE129072F64004DE9A0 /* CellarsProductRequest.swift */; };
+		08A19AD32912961C00FC7F7B /* UnitTypeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A19AD22912961C00FC7F7B /* UnitTypeResponse.swift */; };
 		08A71F372904225E00AF9376 /* FireBaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A71F362904225E00AF9376 /* FireBaseError.swift */; };
 		08A84B20290524BB0077859E /* QueryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A84B1F290524BB0077859E /* QueryModel.swift */; };
+		08BBA3E52915B19F002FAF58 /* StringValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BBA3E42915B19F002FAF58 /* StringValue.swift */; };
 		08F414F6290329EB0039C2E7 /* CellarProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F414F5290329EB0039C2E7 /* CellarProduct.swift */; };
 		08F414F829032A460039C2E7 /* RefrigeratorProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F414F729032A460039C2E7 /* RefrigeratorProduct.swift */; };
 		08F414FA29032B310039C2E7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F414F929032B310039C2E7 /* User.swift */; };
@@ -51,10 +54,11 @@
 		080AE1E028FEBCE80010F66E /* product.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = product.json; sourceTree = "<group>"; };
 		080AE20228FF26520010F66E /* productapi.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = productapi.json; sourceTree = "<group>"; };
 		080AE20728FF507A0010F66E /* AppSecrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSecrets.swift; sourceTree = "<group>"; };
-		080AE20928FF5EF80010F66E /* AuthUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUser.swift; sourceTree = "<group>"; };
 		080AE20B28FF5F640010F66E /* AuthUserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUserResponse.swift; sourceTree = "<group>"; };
+		082007A5291D813A0044F72E /* RefreshDateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshDateHelper.swift; sourceTree = "<group>"; };
 		08644D0D2908511100FFB20A /* RefrigeratorsProductRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefrigeratorsProductRequest.swift; sourceTree = "<group>"; };
 		08644D0F2908531B00FFB20A /* RefrigeratorProductResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefrigeratorProductResponse.swift; sourceTree = "<group>"; };
+		0878A429291C309C00F555BA /* KeyChainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainManager.swift; sourceTree = "<group>"; };
 		08816B6528FDCFDE009DCB3C /* AmbarAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AmbarAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08816B6828FDCFDE009DCB3C /* AmbarAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmbarAPI.h; sourceTree = "<group>"; };
 		08816B6928FDCFDE009DCB3C /* AmbarAPI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = AmbarAPI.docc; sourceTree = "<group>"; };
@@ -66,8 +70,10 @@
 		08816B9028FDD42A009DCB3C /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		0891C7CF2905B9410086E786 /* CellarProductResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellarProductResponse.swift; sourceTree = "<group>"; };
 		089A9EE129072F64004DE9A0 /* CellarsProductRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellarsProductRequest.swift; sourceTree = "<group>"; };
+		08A19AD22912961C00FC7F7B /* UnitTypeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTypeResponse.swift; sourceTree = "<group>"; };
 		08A71F362904225E00AF9376 /* FireBaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseError.swift; sourceTree = "<group>"; };
 		08A84B1F290524BB0077859E /* QueryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryModel.swift; sourceTree = "<group>"; };
+		08BBA3E42915B19F002FAF58 /* StringValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringValue.swift; sourceTree = "<group>"; };
 		08F414F5290329EB0039C2E7 /* CellarProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellarProduct.swift; sourceTree = "<group>"; };
 		08F414F729032A460039C2E7 /* RefrigeratorProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefrigeratorProduct.swift; sourceTree = "<group>"; };
 		08F414F929032B310039C2E7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -121,9 +127,19 @@
 			path = Secrets;
 			sourceTree = "<group>";
 		};
+		082007A4291D81250044F72E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0878A429291C309C00F555BA /* KeyChainManager.swift */,
+				082007A5291D813A0044F72E /* RefreshDateHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		08816B5B28FDCFDE009DCB3C = {
 			isa = PBXGroup;
 			children = (
+				082007A4291D81250044F72E /* Helper */,
 				08816B8A28FDD2F0009DCB3C /* AmbarAPIService.swift */,
 				089A9EE029072F3B004DE9A0 /* RequestModels */,
 				08A84B1E290524A30077859E /* QueryModel */,
@@ -172,6 +188,8 @@
 				080AE20B28FF5F640010F66E /* AuthUserResponse.swift */,
 				0891C7CF2905B9410086E786 /* CellarProductResponse.swift */,
 				08644D0F2908531B00FFB20A /* RefrigeratorProductResponse.swift */,
+				08A19AD22912961C00FC7F7B /* UnitTypeResponse.swift */,
+				08BBA3E42915B19F002FAF58 /* StringValue.swift */,
 			);
 			path = Responses;
 			sourceTree = "<group>";
@@ -180,7 +198,6 @@
 			isa = PBXGroup;
 			children = (
 				08816B9028FDD42A009DCB3C /* Product.swift */,
-				080AE20928FF5EF80010F66E /* AuthUser.swift */,
 				08F414F5290329EB0039C2E7 /* CellarProduct.swift */,
 				08F414F729032A460039C2E7 /* RefrigeratorProduct.swift */,
 				08F414F929032B310039C2E7 /* User.swift */,
@@ -327,8 +344,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08A19AD32912961C00FC7F7B /* UnitTypeResponse.swift in Sources */,
 				08F414F6290329EB0039C2E7 /* CellarProduct.swift in Sources */,
 				08A71F372904225E00AF9376 /* FireBaseError.swift in Sources */,
+				08BBA3E52915B19F002FAF58 /* StringValue.swift in Sources */,
 				080AE1DE28FE8DC80010F66E /* KConstants.swift in Sources */,
 				089A9EE229072F64004DE9A0 /* CellarsProductRequest.swift in Sources */,
 				080AE20C28FF5F640010F66E /* AuthUserResponse.swift in Sources */,
@@ -337,13 +356,14 @@
 				08644D102908531B00FFB20A /* RefrigeratorProductResponse.swift in Sources */,
 				08816B9128FDD42A009DCB3C /* Product.swift in Sources */,
 				0891C7D02905B9410086E786 /* CellarProductResponse.swift in Sources */,
-				080AE20A28FF5EF80010F66E /* AuthUser.swift in Sources */,
 				08816B8B28FDD2F0009DCB3C /* AmbarAPIService.swift in Sources */,
 				08816B6A28FDCFDE009DCB3C /* AmbarAPI.docc in Sources */,
 				080AE20828FF507A0010F66E /* AppSecrets.swift in Sources */,
 				08F414F829032A460039C2E7 /* RefrigeratorProduct.swift in Sources */,
 				08F414FA29032B310039C2E7 /* User.swift in Sources */,
 				08644D0E2908511100FFB20A /* RefrigeratorsProductRequest.swift in Sources */,
+				0878A42A291C309C00F555BA /* KeyChainManager.swift in Sources */,
+				082007A6291D813A0044F72E /* RefreshDateHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
