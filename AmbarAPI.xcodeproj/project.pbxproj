@@ -20,7 +20,6 @@
 		08816B7028FDCFDE009DCB3C /* AmbarAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08816B6528FDCFDE009DCB3C /* AmbarAPI.framework */; };
 		08816B7528FDCFDE009DCB3C /* AmbarAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08816B7428FDCFDE009DCB3C /* AmbarAPITests.swift */; };
 		08816B7628FDCFDE009DCB3C /* AmbarAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 08816B6828FDCFDE009DCB3C /* AmbarAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08816B8028FDD0EA009DCB3C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08816B7F28FDD0EA009DCB3C /* GoogleService-Info.plist */; };
 		08816B8328FDD18E009DCB3C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 08816B8228FDD18E009DCB3C /* FirebaseAnalytics */; };
 		08816B8528FDD18E009DCB3C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 08816B8428FDD18E009DCB3C /* FirebaseAuth */; };
 		08816B8728FDD18E009DCB3C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 08816B8628FDD18E009DCB3C /* FirebaseFirestore */; };
@@ -64,7 +63,6 @@
 		08816B6928FDCFDE009DCB3C /* AmbarAPI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = AmbarAPI.docc; sourceTree = "<group>"; };
 		08816B6F28FDCFDE009DCB3C /* AmbarAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmbarAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08816B7428FDCFDE009DCB3C /* AmbarAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbarAPITests.swift; sourceTree = "<group>"; };
-		08816B7F28FDD0EA009DCB3C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		08816B8A28FDD2F0009DCB3C /* AmbarAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbarAPIService.swift; sourceTree = "<group>"; };
 		08816B8D28FDD395009DCB3C /* ProductResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResponse.swift; sourceTree = "<group>"; };
 		08816B9028FDD42A009DCB3C /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
@@ -165,7 +163,6 @@
 		08816B6728FDCFDE009DCB3C /* AmbarAPI */ = {
 			isa = PBXGroup;
 			children = (
-				08816B7F28FDD0EA009DCB3C /* GoogleService-Info.plist */,
 				08816B6828FDCFDE009DCB3C /* AmbarAPI.h */,
 				08816B6928FDCFDE009DCB3C /* AmbarAPI.docc */,
 			);
@@ -324,7 +321,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08816B8028FDD0EA009DCB3C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
